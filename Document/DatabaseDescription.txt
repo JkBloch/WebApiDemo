@@ -1,0 +1,24 @@
+Change connection string in appsetting.json file
+
+  "ConnectionStrings": {
+    "BookStoreDB": "Server=localhost; Port=portnumber; Database=databasename; Uid=userid; Pwd=password;"
+  },
+
+Table script
+
+CREATE TABLE `books` (
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `Title` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Author` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  `Description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci,
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+you can also create autmatic table by using following step
+
+execute following command in package manager console
+update-database
+
+
+

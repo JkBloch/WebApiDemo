@@ -1,0 +1,45 @@
+For insert record
+POST
+https://localhost:44332/api/books
+
+Body Data
+{  
+    "title": "C# WebApi",
+    "author":"JK",
+     "description": "book description for c# book"
+ }
+ 
+ 
+For getall record 
+GET
+https://localhost:44332/api/books
+
+
+For search record by title and author  
+GET
+https://localhost:44332/api/books/c/jk
+ 
+
+For get record by id   
+GET
+https://localhost:44332/api/books/1
+ 
+
+For update record
+PUT
+https://localhost:44332/api/books/1
+
+Body Data
+{  
+    "title": "C sharp  WebApi",
+    "author":"JKB",
+     "description": "book description for c sharp web api"
+ }
+ 
+ 
+For delete record by id   
+DELETE
+https://localhost:44332/api/books/3
+ 
+ 
+ 
